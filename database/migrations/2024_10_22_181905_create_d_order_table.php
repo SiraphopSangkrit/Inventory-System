@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('cus_id', 5);
             $table->foreign('Cus_id')->references('cus_id')->on('cus_name');
             $table->dateTime('Ord_date');
-            $table->dateTime('Fin_date');
+            $table->dateTime('Fin_date')->nullable();
             $table->smallInteger('amount')->default(0);
             $table->smallInteger('cost_unit')->default(0);
             $table->smallInteger('tot_prc')->default(0);
